@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+ - 2.2
+ - jruby
+
+notifications:
+- false
+scripts:
+- bundle exec rspec spec
+after_script:
+- bundle exec rake coveralls:push
