@@ -1,0 +1,3 @@
+<%= if @message.images.attached? %>
+  <image src="<%=(url_for(@post.image))%>">
+<% end %>

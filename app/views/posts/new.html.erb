@@ -1,0 +1,6 @@
+<%= form_for @post do |form| %>
+  <%= form.label "Post" %>
+  <%= form.text_field :title %>
+  <%= form.file_field :image %>
+  <%= form.submit "Submit" %>
+<% end %>
